@@ -1,11 +1,12 @@
 1. 주요 기능 및 구조
-homework_js/
+```homework_js/
 ├── src/
 │   ├── global.css     : 전역 CSS 설정
 │   ├── main.js        : 진입점
 │   ├── offcanvas.js   : 오프캔버스 관련 기능 구현
 │   └── style.css      : 컴포넌트 CSS 설정
 └── index.html         : 메인 HTML 구현
+```
 
 - APP의 헤더 컴포넌트 구현
 - 미디어쿼리를 통해 작은 디바이스에서의 UX를 향상 시키기 위한 NAV에 대한 OFF-Canvas 적용
