@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container container">
+        <div class="header__logo">
+          <a href="/" class="header__logo-link" aria-label="Home">
+            <img
+              src="/src/assets/logo.svg"
+              alt="logo"
+              class="header__logo-img"
+            />
+          </a>
+        </div>
+
+        <button
+          class="header__hamburger"
+          id="menuToggle"
+          aria-label="Open menu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <!-- 데스크톱 네비게이션 -->
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="/vision" class="header__nav-link">Vision</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="/ecosystem" class="header__nav-link">Ecosystem</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="/roadmap" class="header__nav-link">Roadmap</a>
+            </li>
+            <li class="header__nav-item">
+              <button
+                type="button"
+                class="header__nav-link"
+                id="moreButton"
+                aria-label="More menu"
+              >
+                More
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- 통합 Off-Canvas -->
+      <div class="header__off-canvas-wrapper" id="offCanvas">
+        <!-- 백드롭 -->
+        <div class="header__off-canvas-backdrop" id="offCanvasBackdrop"></div>
+
+        <!-- Off-Canvas 패널 -->
+        <div class="header__off-canvas">
+          <!-- 닫기 버튼 -->
+          <button
+            class="header__off-canvas-close"
+            id="closeMenu"
+            aria-label="Close menu"
+          >
+            &times;
+          </button>
+
+          <!-- 데스크톱용 More 링크들 -->
+          <div class="header__off-canvas-more" id="desktopMoreLinks">
+            <a href="/contact" class="header__off-canvas-more-link"
+              >Contact Us</a
+            >
+          </div>
+
+          <!-- 모바일 네비게이션 메뉴 -->
+          <div class="header__off-canvas-nav" id="mobileNav">
+            <ul class="header__off-canvas-nav-list">
+              <li class="header__off-canvas-nav-item">
+                <a href="/vision" class="header__off-canvas-nav-link">Vision</a>
+              </li>
+              <li class="header__off-canvas-nav-item">
+                <a href="/ecosystem" class="header__off-canvas-nav-link"
+                  >Ecosystem</a
+                >
+              </li>
+              <li class="header__off-canvas-nav-item">
+                <a href="/roadmap" class="header__off-canvas-nav-link"
+                  >Roadmap</a
+                >
+              </li>
+              <li class="header__off-canvas-nav-item">
+                <a href="/contact" class="header__off-canvas-nav-link"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
