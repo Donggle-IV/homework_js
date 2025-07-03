@@ -8,91 +8,43 @@
     <link rel="stylesheet" href="./src/style.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="header__container container">
-        <div class="header__logo">
-          <a href="/" class="header__logo-link" aria-label="Home"> logo </a>
-        </div>
-
-        <button
-          class="header__hamburger"
-          id="menuToggle"
-          aria-label="Open menu"
-          aria-expanded="false"
-        >
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-
-        <nav class="header__nav">
-          <ul class="header__nav-list">
-            <li class="header__nav-item">
-              <a href="/vision" class="header__nav-link">Vision</a>
-            </li>
-            <li class="header__nav-item">
-              <a href="/ecosystem" class="header__nav-link">Ecosystem</a>
-            </li>
-            <li class="header__nav-item">
-              <a href="/roadmap" class="header__nav-link">Roadmap</a>
-            </li>
-            <li class="header__nav-item">
-              <button
-                type="button"
-                class="header__nav-link"
-                id="moreButton"
-                aria-label="More menu"
+    <!-- Vision Section -->
+    <section class="section vision-section" id="vision">
+      <img
+        src="./src/vision-bg.webp"
+        alt="vision background"
+        class="vision-bg"
+      />
+      <div class="section-content">
+        <div class="content-wrapper">
+          <div class="vision__title">
+            <span>Every</span>
+            <div class="words-container"></div>
+          </div>
+          <div class="arrow-container">
+            <a href="#" class="arrow-button">
+              <span>what is our vision?</span>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                More
-              </button>
-            </li>
-          </ul>
-        </nav>
-      </div>
-
-      <div class="header__off-canvas-wrapper" id="offCanvas">
-        <div class="header__off-canvas-backdrop" id="offCanvasBackdrop"></div>
-
-        <div class="header__off-canvas">
-          <button
-            class="header__off-canvas-close"
-            id="closeMenu"
-            aria-label="Close menu"
-          >
-            &times;
-          </button>
-
-          <div class="header__off-canvas-more" id="desktopMoreLinks">
-            <a href="/contact" class="header__off-canvas-more-link"
-              >Contact Us</a
-            >
-          </div>
-
-          <div class="header__off-canvas-nav" id="mobileNav">
-            <ul class="header__off-canvas-nav-list">
-              <li class="header__off-canvas-nav-item">
-                <a href="/vision" class="header__off-canvas-nav-link">Vision</a>
-              </li>
-              <li class="header__off-canvas-nav-item">
-                <a href="/ecosystem" class="header__off-canvas-nav-link"
-                  >Ecosystem</a
-                >
-              </li>
-              <li class="header__off-canvas-nav-item">
-                <a href="/roadmap" class="header__off-canvas-nav-link"
-                  >Roadmap</a
-                >
-              </li>
-              <li class="header__off-canvas-nav-item">
-                <a href="/contact" class="header__off-canvas-nav-link"
-                  >Contact Us</a
-                >
-              </li>
-            </ul>
+                <path
+                  d="M12 4V20M12 20L5 13M12 20L19 13"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
           </div>
         </div>
       </div>
-    </header>
+    </section>
+
     <script type="module" src="./src/main.js"></script>
   </body>
 </html>

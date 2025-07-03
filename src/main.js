@@ -1,1 +1,1 @@
-import "./offcanvas.js";
+import "./animation.js";
